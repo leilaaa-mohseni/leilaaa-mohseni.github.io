@@ -296,11 +296,19 @@ footer i {
 @media (max-width: 768px) {
   /* Navbar remains horizontal & scrollable */
   .top-nav {
-    justify-content: flex-start;
+    flex-direction: row; /* Ensure horizontal layout */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between;
+    padding: 10px 0;
+    position: static;
+    border-bottom: none;
   }
+
   .top-nav a {
-    font-size: 14px;
-    padding: 8px 16px;
+    width: auto;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 50px; /* گرد کردن دکمه‌ها در گوشی */
   }
 
   /* Page title smaller */
