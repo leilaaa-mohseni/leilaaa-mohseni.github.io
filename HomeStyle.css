@@ -1,0 +1,619 @@
+ /* body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.top-nav a {
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+
+  display: flex;               
+  justify-content: center;     
+  align-items: center;        
+}
+
+.top-nav a.active {
+  background-color: #abe5e5; 
+}
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 80px; 
+}
+.main-container {
+  display: flex;
+  width: 70%;
+  border: none;
+}
+
+/* ستون چپ */
+ /* .sidebar {
+  width: 30%;
+  text-align: center;
+
+}
+
+.sidebar img.avatar-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sidebar h2 {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 30px;
+  color: blueviolet;
+}
+
+.info-box {
+  display: block;
+  margin: 10px auto;
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #e6e6ff;
+  text-decoration: none;
+  color: black;
+}
+
+.info-box.purple {
+  background-color: #d5ccff;
+}
+
+.contacts {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contacts h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: rgb(55, 183, 187);
+}
+
+ .contacts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts ul li {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+.contacts ul li a i {
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
+}
+
+
+ .content-box {
+  width: 70%;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.content-box h2 {
+  font-weight: bold;
+  font-size: 30px;
+
+}
+
+.content-box p {
+  margin: 10px 0;
+  font-size: large;
+}
+p a {
+  color: blueviolet;
+ }
+
+ @media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .sidebar, .content-box {
+    width: 100%;
+    margin: 0;
+  }
+
+  .sidebar img.avatar-img { 
+     width: 120px;
+    height: 120px;
+  }
+
+  .top-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}     */ 
+
+
+
+/* body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.top-nav a {
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-nav a.active {
+  background-color: #abe5e5;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 80px;
+  padding: 0 10px;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.sidebar {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar img.avatar-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sidebar h2 {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 30px;
+  color: blueviolet;
+}
+
+.info-box {
+  display: block;
+  margin: 10px auto;
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #e6e6ff;
+  text-decoration: none;
+  color: black;
+}
+
+.info-box.purple {
+  background-color: #d5ccff;
+}
+
+.contacts {
+  margin-top: 20px;
+  text-align: center;
+  order: 2; /* برای نمایش بعد از content-box در گوشی */
+/* } */
+
+/* .contacts h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: rgb(55, 183, 187);
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts ul li {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contacts ul li a i {
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
+}
+
+.content-box {
+  width: 70%;
+  padding: 20px;
+  margin-left: 20px;
+  order: 1;
+}
+
+.content-box h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.content-box p {
+  margin: 10px 0;
+  font-size: large;
+}
+
+p a {
+  color: blueviolet;
+} */
+
+/* ریسپانسیو برای گوشی */
+/* @media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+    order: 0;
+  }
+
+  .content-box {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+
+  .contacts {
+    margin-top: 20px;
+    padding: 10px;
+    order: 2;
+  }
+
+  .sidebar img.avatar-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .info-box {
+    width: 80%;
+  }
+
+  .top-nav {
+    flex-direction: row; /* حفظ حالت افقی */
+    /* flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    position: static;
+    border-bottom: none;
+  }
+
+  .main-wrapper {
+    margin-top: 20px;
+  }
+} */ 
+
+
+
+
+/* General Styles */
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.top-nav a {
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px; /* گرد کردن دکمه‌ها */
+}
+
+.top-nav a.active {
+  background-color: #abe5e5;
+}
+
+/* Main Layout */
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.main-container {
+  display: flex;
+  width: 70%;
+  border: none;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 30%;
+  text-align: center;
+}
+
+.sidebar img.avatar-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sidebar h2 {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 30px;
+  color: blueviolet;
+}
+
+.info-box {
+  display: block;
+  margin: 10px auto;
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #e6e6ff;
+  text-decoration: none;
+  color: black;
+}
+
+.info-box.purple {
+  background-color: #d5ccff;
+}
+
+/* Contacts (desktop) */
+.contacts {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contacts h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: rgb(55, 183, 187);
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts ul li {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contacts ul li a i {
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
+}
+
+/* Content Box */
+.content-box {
+  width: 70%;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.content-box h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.content-box p {
+  margin: 10px 0;
+  font-size: large;
+}
+
+p a {
+  color: blueviolet;
+}
+
+/* Responsive: Mobile (≤768px) */
+@media (max-width: 768px) {
+  /* Navbar stays horizontal in a single row */
+  .top-nav {
+    flex-direction: row; /* Ensure horizontal layout */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between;
+    padding: 10px 0;
+    position: static;
+    border-bottom: none;
+  }
+
+  .top-nav a {
+    width: auto;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 50px; /* گرد کردن دکمه‌ها در گوشی */
+  }
+
+  /* Main layout stacks */
+  .main-wrapper {
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Sidebar */
+  .sidebar img.avatar-img {
+    width: 250px; /* بزرگتر کردن عکس */
+    height: 250px;
+  }
+
+  .sidebar,
+  .content-box {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+
+  /* Info-box */
+  .info-box {
+    width: 80%;
+  }
+
+  /* Contacts in a 2×2 grid */
+  .contacts {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .contacts ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px;
+    justify-items: center;
+  }
+
+  .contacts ul li {
+    padding: 0;
+  }
+
+  .contacts ul li a {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+
+  /* Content adjustments */
+  .content-box h2 {
+    font-size: 24px;
+  }
+
+  .content-box p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
