@@ -37,7 +37,7 @@ body {
 }
 
 .top-nav a.active {
-  background-color: #abe5e5;
+  background-color: #62c2c2;
 }
 
 /* Main Layout */
@@ -52,6 +52,14 @@ body {
   display: flex;
   width: 70%;
   border: none;
+}
+h1 {
+  font-size: 26px;       
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: blueviolet;        
+  text-align: center;   
 }
 
 /* Sidebar */
